@@ -24,7 +24,7 @@ def difference(arr )
     end
 
     # Создаю переменную с разницей максимального и минимального, далее пробегаюсь по массиву и вычитаю значения
-    min = arr.max - arr.min
+    min = (1440 - arr.max) + arr.min
     
     (0...arr.length).each do |i|
         (0...arr.length).each do |j|
@@ -42,7 +42,7 @@ def difference(arr )
 
     return min
 end
-arr = ["2:10pm", "1:30pm","10:30am", "5:20pm"]
+arr =  ["2:10pm", "1:30pm", "10:30am", "5:20pm", "11:55pm", "12:10am"]
 
 
 print difference(arr)
